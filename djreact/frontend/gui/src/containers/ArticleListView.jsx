@@ -25,11 +25,10 @@ class ArticleList extends Component {
       this.setState({
         articles: res.data
       });
-      console.log(res.data);
     });
   }
   render() {
-    return <Articles data={listData} />;
+    return <Articles data={this.state.articles} />;
   }
 }
 
